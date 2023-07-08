@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mundo Marino</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #sin{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        #nube1{
+            animation: movimiento 90s linear infinite;
+            width: 590px;
+            height: 180px;
+            display: block;
+            position: absolute;
+        }
+        #nube2{
+            animation: movimienton2 90s linear infinite;
+            width: 590px;
+            height: 180px;
+            display: block;
+            position: absolute;
+        }
+        @keyframes movimiento{
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(700px);
+            }
+        }
+        @keyframes movimienton2{
+            0%{
+                transform: translateX(680px);
+            }
+            100%{
+                transform: translateX(0px);
+            }
+        }
+        #subpng1{
+            animation: movimientosub 5s linear infinite;
+            width: 250px;
+            height: 150px;
+            display: block;
+            position: absolute;
+            margin-top: 450px;
+        }
+        @keyframes movimientosub{
+            0%{
+                transform: translatey(0);
+            }
+            50%{
+                transform: translatey(10px);
+            }
+            100%{
+                transform: translatey(0px);
+            }
+        }
+        #explora{
+            margin-top: 280px;
+            position: absolute;
+            margin-left: 350px;
+            color: rgb(7, 10, 53);
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgba(0, 0, 255, 0.151);
+        }
+        #arre{
+            width: 100%;
+            height: 101%;
+            margin-top: 697px;
+            position: absolute;
+        }
+        #pecesdv{
+            width: 110px;
+            height: 80px;
+            margin-top: 900px;
+            position: absolute;
+            margin-left: 75%;
+            animation: movimientopecesdv 30s linear infinite;
+            
+        }
+        @keyframes movimientopecesdv{
+            0%{
+                transform: translateX(0);
+            }
+            50%{
+                transform: translateX(200px);
+            }
+            50%{
+                transform: translatey(200px);
+            }
+            50%{
+                transform: translatey(400px);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
+        #pecesdv1{
+            width: 120px;
+            height: 50px;
+            margin-top: 900px;
+            position: absolute;
+            margin-left: 50%;
+            animation: movimientopecesdv1 40s linear infinite;
+            
+        }
+        @keyframes movimientopecesdv1{
+            0%{
+                transform: translatey(0);
+            }
+            50%{
+                transform: translatey(400px);
+            }
+            100%{
+                transform: translatey(0);
+            }
+        }
+        #pecesdv2{
+            width: 90px;
+            height: 50px;
+            margin-top: 700px;
+            position: absolute;
+            margin-left: 25%;
+            animation: movimientopecesdv2 50s linear infinite;
+        }
+        @keyframes movimientopecesdv2{
+            0%{
+                transform: translatex(0);
+            }
+            15%{
+                transform: translatex(200px);
+            }
+            50%{
+                transform: translatey(500px);
+            }
+            75%{
+                transform: translatex(200px);
+            }
+            100%{
+                transform: translatex(0);
+            }
+        }
+        #pecesdv3{
+            width: 120px;
+            height: 60px;
+            margin-top: 800px;
+            position: absolute;
+            margin-left: 10%;
+            animation: movimientopecesdv3 60s linear infinite;
+        }
+        @keyframes movimientopecesdv3{
+            0%{
+                transform: translatex(0);
+            }
+            25%{
+                transform: translatex(700px);
+            }
+            50%{
+                transform: translatey(400px);
+            }
+            75%{
+                transform: translatey(400px);
+            }
+            100%{
+                transform: translatex(0);
+            }
+        }
+        #pecesdv4{
+            width: 98px;
+            height: 70px;
+            margin-top: 750px;
+            position: absolute;
+            margin-left: 15%;
+            animation: movimientopecesdv4 70s linear infinite;
+        }
+        @keyframes movimientopecesdv4{
+            0%{
+                transform: translatey(0);
+            }
+            25%{
+                transform: translatey(400px);
+            }
+            50%{
+                transform: translatex(400px);
+            }
+            75%{
+                transform: translatex(400px);
+            }
+            100%{
+                transform: translatey(0);
+            }
+        }
+        #pecesdv5{
+            width: 115px;
+            height: 70px;
+            margin-top: 700px;
+            position: absolute;
+            margin-left: 35%;
+            animation: movimientopecesdv5 80s linear infinite;
+        }
+        @keyframes movimientopecesdv5{
+            0%{
+                transform: translatex(0);
+            }
+            25%{
+                transform: translatex(400px);
+            }
+            50%{
+                transform: translatey(400px);
+            }
+            75%{
+                transform: translatey(400px);
+            }
+            100%{
+                transform: translatex(0);
+            }
+        }
+        #piedrasleft{
+            width: 300px;
+            height: 200px;
+            margin-top: 1200px;
+            position: absolute;
+            margin-left: 0px;
+        }
+        #prosa{
+            width: 210px;
+            height: 200px;
+            margin-top: 1060px;
+            position: absolute;
+            margin-left: -30px;
+        }
+        #pverde{
+            width: 210px;
+            height: 200px;
+            margin-top: 1100px;
+            position: absolute;
+            margin-left: 60px;
+        }
+        #piedrasr{
+            width: 190px;
+            height: 60px;
+            margin-top: 1320px;
+            position: absolute;
+            margin-left: 223px;
+        }
+        #pazul{
+            width: 240px;
+            height: 180px;
+            margin-top: 1130px;
+            position: absolute;
+            margin-left: 222px;
+        }
+        #coralleft{
+            width: 110px;
+            height: 140px;
+            margin-top: 1213px;
+            position: absolute;
+            margin-left: 197px;
+        }
+        #algasvm{
+            width: 250px;
+            height: 200px;
+            margin-top: 1200px;
+            position: absolute;
+            margin-left: 400px;
+        }
+        #piedrita{
+            width: 350px;
+            height: 250px;
+            margin-top: 1200px;
+            position: absolute;
+            margin-left: 800px;
+        }
+        #esponja{
+            width: 150px;
+            height: 200px;
+            margin-top: 1150px;
+            position: absolute;
+            margin-left: 890px;
+        }
+        #proja{
+            width: 280px;
+            height: 210px;
+            margin-top: 1080px;
+            position: absolute;
+            margin-left: 810px;
+        }
+        #arrer{
+            width: 280px;
+            height: 390px;
+            margin-top: 1010px;
+            position: absolute;
+            margin-left: 1006px;
+        }
+        #tortuga1{
+            width: 100px;
+            height: 110px;
+            margin-top: 700px;
+            position: absolute;
+            margin-left: 700px;
+        }
+        #coralesdm{
+            width: 250px;
+            height: 200px;
+            margin-top: 1200px;
+            position: absolute;
+            margin-left: 700px;
+        }
+        #buzoma{
+            width: 100px;
+            height: 110px;
+            margin-top: 1100px;
+            position: absolute;
+            margin-left: 300px;
+            transform: rotate(-90deg);
+        }
+        #tortum{
+            width: 100px;
+            height: 110px;
+            margin-top: 1200px;
+            position: absolute;
+            margin-left: 700px;
+        }
+        #arre2{
+            width: 100%;
+            height: 100%;
+            margin-top: 1400px;
+            position: absolute;
+        }
+        #orca{
+            width: auto;
+            height: 100%;
+            margin-top: 1400px;
+            position: absolute;
+            margin-left: 35%;
+        }
+        #orcar{
+            width: 300px;
+            height: 300px;
+            margin-top: 1500px;
+            position: absolute;
+            margin-left: 900px;
+        }
+        #orcagif{
+            width: 430px;
+            height: 300px;
+            margin-top: 1797px;
+            position: absolute;
+            margin-left: 850px;
+        }
+        .oh1{
+            margin-top: 1400px;
+            margin-left: 60px;
+            position: absolute;
+            color: rgb(219, 187, 79);
+            text-align: center;
+            width: 350px;
+        }
+        .oh1 p{
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #arre3{
+            width: 100%;
+            height: 101%;
+            margin-top: 2097px;
+            position: absolute;
+        }
+        #pta{
+            width: 300px;
+            height: 500px;
+            margin-top: 2100px;
+            position: absolute;
+            margin-left: 900px;
+        }
+        #pulpogif{
+            width: 300px;
+            height: 80px;
+            margin-top: 2500px;
+            position: absolute;
+            margin-left: -500px;
+            transform: rotate(90deg);
+        }
+        #pulpovid{
+            width: auto;
+            height: 100%;
+            margin-top: 2100px;
+            position: absolute;
+            margin-left: -148px;
+        }
+        #arre4{
+            width: 100%;
+            height: 100.5%;
+            margin-top: 2197px;
+            position: absolute;
+        }
+        #ballena{
+            width: auto;
+            height: 100%;
+            margin-top: 2200px;
+            position: absolute;
+            margin-left: 35%;
+        }
+        #ballenadel{
+            width: 300px;
+            height: 500px;
+            margin-top: 2300px;
+            position: absolute;
+            margin-left: 900px;
+        }
+        #arre5{
+            width: 100%;
+            height: 100.5%;
+            margin-top: 2897px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="inicio">
+    <img id="sin" src="sin_nubes.jpg" alt="sinnube">
+    <img id="nube1" src="nube_1.png" alt="nube1">
+    <img id="nube2" src="nube_2.png" alt="nube2">
+    <img id="subpng1" src="submarino.png" alt="submarino1">
+    <!-- <h1 id="explora">¡Explora El Maravilloso Mundo Marino!</h1> -->
+    </div>
+    <div class="arrecife">
+        <img id="arre" src="arrecifefondoazul.jpg" alt="arrecife">
+        <img id="pecesdv" src="pecesitosdandovueltas.gif" alt="arrecife">
+        <img id="pecesdv1" src="pecesitosdandovueltas.gif" alt="arrecife">
+        <img id="pecesdv2" src="pecesitosdandovueltas.gif" alt="arrecife">
+        <img id="pecesdv3" src="pecesitosdandovueltas.gif" alt="arrecife">
+        <img id="pecesdv4" src="pecesitosdandovueltas.gif" alt="arrecife">
+        <img id="pecesdv5" src="pecesitosdandovueltas.gif" alt="arrecife">
+        <img id="prosa" src="plantarosa.png" alt="prosa">
+        <img id="pverde" src="planta.png" alt="prverde">
+        <img id="piedrasleft" src="piedras.png" alt="piedras">
+        <img id="piedrasr" src="piedrasr.png" alt="piedrasr">
+        <img id="pazul" src="plantaazul.png" alt="pazul">
+        <img id="algasvm" src="algasvm.png" alt="algasvm">
+        <img id="coralleft" src="coral.png" alt="coral">
+        <img id="proja" src="plantaroja.png" alt="proja">
+        <img id="esponja" src="esponja.png" alt="esponja">
+        <img id="piedrita" src="piedrita.png" alt="piedrita">
+        <img id="arrer" src="arrer.png" alt="arrer">
+        <img id="tortuga1" src="tortuga.png" alt="tortu">
+        <img id="coralesdm" src="coralesdm.png" alt="cora">
+        <img id="tortum" src="tortudef.png" alt="cora">
+        <img id="buzoma" src="buzoma.png" alt="cora">
+        </div>
+    <div class="ballena">
+        <img id="arre2" src="arre2.jpg" alt="orca">
+        <video id="orca" controls>
+            <source src="orca.mp4" type="video/mp4"></source>
+        </video>
+        <div class="oh1">
+        <h1>Orcas</h1>
+        <p>Las Orcas son superpredadores.<br><br>No tienen Enemigos Naturales.<br><br>Se encuentran a partir de los 60 metros de profundidad del mar<br><br>Se encuentran en todos los oceános del mundo.<br><br>Son animales altamente inteligentes, entre los pocos capaces de reconocerse en un espejo. Son capaces de juego, de imitar a otros animales y de transmitir enseñanzas a su descendencia.<br><br>Pueden llevar vidas de entre 60 y 80 años, si se trata de machos, y de casi 100 años si se trata de hembras.</p>
+        </div>
+        <img id="orcar" src="orcapngr.png" alt="orca">
+        <img id="orcagif" src="orcagif.gif" alt="orca">
+    </div>
+    <div class="pulpo">
+        <img id="arre3" src="arre3.jpg" alt="pulpo">
+        <img id="pta" src="pulpogigantetiradoparaabajo.jpg.png" alt="pulpo">
+        <img id="pulpo2" src="pulpo2.png" alt="pulpo">
+        <img id="pulpogif" src="9VV3.gif" alt="pulpo">
+        <video id="pulpovid" controls>
+            <source src="pulpo_bailando.mp4" type="video/mp4"></source>
+        </video>
+    </div>
+    <div class="ballena">
+        <img id="arre4" src="arre4.jpg" alt="ballena">
+        <video id="ballena" controls>
+            <source src="ballenas.mp4" type="video/mp4"></source>
+        </video>
+        <img id="ballenadel" src="ballenadelao.png" alt="ballena">
+    </div>
+    <div class="arreulti">
+        <img id="arre5" src="arre5.jpg" alt="arre5">
+    </div>
+</body>
+</html>
